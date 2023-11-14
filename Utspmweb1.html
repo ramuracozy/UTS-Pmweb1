@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Daftarkan Alumni</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset{
+            border: 2px solid #4a4a4a;
+        }
+
+        #alamatkantor{
+            border: 2px solid #4a4a4a;
+        }
+
+        .search{
+            border-radius: 10px;
+            border: 2px solid #4a4a4a;
+        }
+         
+        input, select{
+            height: 15px;
+            border: 2px solid #4a4a4a;
+        }
+
+        td{
+            padding: 5px 10px;
+        }
+
+        button{
+            padding: 5px 10px;
+            border: 0;
+            border-radius: 4px;
+            color: white;
+        }
+
+        .btn-blue{
+            background-color: blue;
+        }
+
+        .btn-red{
+            background-color: crimson;
+        }
+
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Daftarkan Alumni</legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="cari_nama_alumni">Cari Nama Alumni:</label>
+                </td>
+                <td>
+                    <form action="/form/submit" method="GET">
+                        <input type="text" name="text" class="search" placeholder="Search">
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="ProgramStudi">Program Studi:</label>
+                </td>
+
+                <td>
+                    <select name="programstudi" id="programstudi">
+                        <option value="">Program Studi</option>
+                        <option value=""></option>
+                        <option value="TI">Teknik Informatika</option>
+                        <option value="SI">Sistem Informasi</option>
+                        <option value="BD">Bisnis Digital</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="TanggalMasuk">Tanggal Masuk:</label>
+                </td>
+
+                <td>
+                    <input type="date" name="TanggalMasuk" id="TanggalMasuk">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="TanggalLulus">Tanggal Lulus:</label>
+                </td>
+
+                <td>
+                    <input type="date" name="TanggalLulus" id="TanggalLulus">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="AlamatLinkedin">Alamat Linkedin:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="AlamatLinkedin" id="AlamatLinkedin">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Pekerjaan">Pekerjaan:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="Pekerjaan" id="Pekerjaan">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="alamatkantor">Alamat Kantor:</label>
+                </td>
+
+                <td>
+                    <textarea name="alamatkantor" id="alamatkantor" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="PengurusAlumni">Pengurus Alumni:</label>
+                </td>
+
+                <td>
+                    <input type="radio" name="Ya" value="Ya"> Ya
+                    <input type="radio" name="Tidak" value="Tidak"> Tidak
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" class="btn-blue">Simpan</button>
+                    <button type="reset" class="btn-red">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>
